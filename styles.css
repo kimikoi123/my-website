@@ -1,0 +1,141 @@
+@import url('/css-utilities/fonts.css');
+@import url('/css-utilities/normalize.css');
+
+
+:root {
+    --header-background-color: #f4f2f0;
+    --btn-border-color: #1769ff;
+    --dark-font-color: #333333;
+}
+
+
+*, 
+*::before, 
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    width: 100vw;
+    color: var(--dark-font-color);
+}
+
+.main-header {
+    min-height: 100vh;
+    background-color: var(--header-background-color);
+    padding-top: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%   ;
+    border: 1px solid black;
+}
+
+.logo::first-letter {
+    font-family: PT Serif;
+    font-weight: 600;
+}
+
+.logo {
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+    text-shadow: -5px 1px 2px rgba(0,0,0,.2);
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navbar-container ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.navbar-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hire-me-btn {
+    text-align: center;
+    padding: .5rem 1rem;
+    border: 1px solid var(--btn-border-color);
+    border-radius: 10000px;
+    color: var(--btn-border-color);
+    cursor: pointer;
+    outline: none;
+}
+
+.header-content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 6%;
+    border: 1px solid black;
+}
+
+.header-image {
+    width: 30vw;
+    height: 80vh;
+    background-image: url(/images/my-profile-picture.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    margin-right: 1rem;
+    border: 1px solid black;
+}
+
+.header-wrapper {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.header-wrapper-title {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.header-wrapper-content {
+    font-size: 2rem;
+}
+
+.header-wrapper p {
+    font-size: .8rem;
+    opacity: .8;
+}
+
+.header-wrapper-btn {
+    width: 150px;
+    text-align: center;
+    padding: .9rem 0;
+    background-color: var(--btn-border-color);
+    border: none;
+    border-radius: 100000px;
+    color: white;
+    font-weight: 600;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+@media (max-width: 680px) {
+
+}
