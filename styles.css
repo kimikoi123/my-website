@@ -64,13 +64,13 @@ body {
 .navbar-container {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 3vw;
 }
 
 .navbar-container ul {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 3vw;
     list-style: none;
 }
 

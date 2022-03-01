@@ -8,7 +8,6 @@ const message = document.getElementById('message')
 
 
 
-
 function sendEmail() {
     Email.send({
         Host : "smtp.gmail.com",

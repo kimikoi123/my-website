@@ -11,17 +11,17 @@
     <title>Kimuel Website</title>
 </head>
 <body>
-    <header class="main-header">
+    <header class="main-header" id="header">
         <div class="main-header-container">
             <nav class="header-nav">
                 <div class="logo">Kimuel</div>
                 <div class="navbar-container">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Work</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Work</a></li>
                     </ul>
-                    <button class="hire-me-btn" type="button">Hire Me!</button>
+                    <a href="#contact"><button class="hire-me-btn" type="button">Hire Me!</button></a>
                 </div>
             </nav>
             <div class="header-content-container">
@@ -29,14 +29,16 @@
                 <div class="header-wrapper">
                     <div class="header-wrapper-title">Hello, I'm Kimuel</div>
                     <div class="header-wrapper-content">Expert in Web Development & Graphic Design</div>
-                    <p>Currently available for select projects, collaborations and consulting. Currently available for select</p>
-                    <button class="header-wrapper-btn" type="button">SEE MY WORK</button>
+                    <p>Currently available for select projects, collaborations and consulting</p>
+                    <a href="#portfolio">
+                        <button class="header-wrapper-btn" type="button">SEE MY WORK</button>
+                    </a>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section class="section-services">
+        <section class="section-services" id="services">
             <div class="section-services-container">
                 <div class="section-header">SERVICES</div>
                 <div class="services-wrapper-container">
@@ -53,12 +55,16 @@
                 </div>
             </div>
         </section>
-        <section class="section-portfolio">
+        <section class="section-portfolio" id="portfolio">
             <div class="section-portfolio-container">
                 <div class="section-header portfolio-header">PORTFOLIO</div>
                 <div class="portfolio-wrapper-container">
-                    <div class="portfolio-item item1"></div>
-                    <div class="portfolio-item item2"></div>
+                    <a href="https://pexwebsite.netlify.app" target="_blank">
+                        <div class="portfolio-item item1"></div>
+                    </a>
+                    <a href="https://pixturewebsite.netlify.app" target="_blank">    
+                        <div class="portfolio-item item2"></div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -68,10 +74,10 @@
                     <div>Make It Awesome!</div>
                     <p>There is nothing I won't try. Never heard the word impossible. This time there's no stopping us.</p>
                 </div>
-                <button class="hire-me-btn" type="button">Hire Me Now!</button>
+                <a href="#contact"><button class="hire-me-btn" type="button">Hire Me Now!</button></a>
             </div>
         </section>
-        <section class="contact-section">
+        <section class="contact-section" id="contact">
             <div class="contact-container">
                 <div>CONTACT ME</div>
                 <form data-form class="contact-form" onsubmit="sendEmail(); reset(); return false">
@@ -79,7 +85,7 @@
                     <input type="email" name="email" id="email" placeholder="Email*">
                     <input type="text" name="subject" id="subject" placeholder="Subject*">
                     <textarea name="message" id="message" rows="4" cols="100" placeholder="Message"></textarea>
-                    <button class="header-wrapper-btn form-btn" type="submit">HIRE ME!</button>
+                    <button class="header-wrapper-btn form-btn" type="submit">SEND</button>
                 </form>
             </div>
         </section>
@@ -87,15 +93,15 @@
     <footer class="main-footer">
         <div class="main-footer-container">
             <ul class="footer-nav-container">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Work</a></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portflio">Work</a></li>
             </ul>
             <ul class="footer-social-accounts-container">
-                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100078983130626" target="_blank" ><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/kimuelDeveloper"  target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/kimueldevs/"  target="_blank"><i class="fa-brands fa-instagram" ></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCMrE8uB8BOnv3CJocMBN9vQ" target="_blank" ><i class="fa-brands fa-youtube"></i></a></li>
             </ul>
         </div>
         <div class="footer-name-text">Kimuel Anqui</div>
