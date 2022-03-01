@@ -5,30 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/dc35e1a6ba.js" crossorigin="anonymous" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
+    <script src="scripts.js" defer></script>
     <title>Kimuel Website</title>
 </head>
 <body>
     <header class="main-header">
-        <nav class="header-nav">
-            <div class="logo">Kimuel</div>
-            <div class="navbar-container">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-                <button class="hire-me-btn" type="button">Hire Me!</button>
-            </div>
-        </nav>
-        <div class="header-content-container">
-            <div class="header-image"></div>
-            <div class="header-wrapper">
-                <div class="header-wrapper-title">Hello, I'm Kimuel</div>
-                <div class="header-wrapper-content">Expert in Web Development & Graphic Design</div>
-                <p>Currently available for select projects, collaborations and consulting. Currently available for select</p>
-                <button class="header-wrapper-btn" type="button">SEE MY WORK</button>
+        <div class="main-header-container">
+            <nav class="header-nav">
+                <div class="logo">Kimuel</div>
+                <div class="navbar-container">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                    <button class="hire-me-btn" type="button">Hire Me!</button>
+                </div>
+            </nav>
+            <div class="header-content-container">
+                <img class="header-image" src="/images/my-profile-picture.png" alt="">
+                <div class="header-wrapper">
+                    <div class="header-wrapper-title">Hello, I'm Kimuel</div>
+                    <div class="header-wrapper-content">Expert in Web Development & Graphic Design</div>
+                    <p>Currently available for select projects, collaborations and consulting. Currently available for select</p>
+                    <button class="header-wrapper-btn" type="button">SEE MY WORK</button>
+                </div>
             </div>
         </div>
-        </header>
+    </header>
+    <main>
+        <section class="section-services">
+            <div class="section-services-container">
+                <div class="section-header">SERVICES</div>
+                <div class="services-wrapper-container">
+                    <div class="service-wrapper">
+                        <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                            <div class="service-title">WEB DEVELOPMENT</div>
+                            <p class="service-content">Well we're movin' on up to the east side to a deluxe apartment in the</p>
+                    </div>
+                    <div class="service-wrapper">
+                        <div class="service-icon "><i class="fa-solid fa-compass-drafting"></i></div>
+                        <div class="service-title">GRAPHIC DESIGN</div>
+                        <p class="service-content">Well we're movin' on up to the east side to a deluxe apartment in the</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-portfolio">
+            <div class="section-portfolio-container">
+                <div class="section-header portfolio-header">PORTFOLIO</div>
+                <div class="portfolio-wrapper-container">
+                    <div class="portfolio-item item1"></div>
+                    <div class="portfolio-item item2"></div>
+                </div>
+            </div>
+        </section>
+        <section class="additional-info-section">
+            <div class="additional-info-container">
+                <div class="additional-info-wrapper">      
+                    <div>Make It Awesome!</div>
+                    <p>There is nothing I won't try. Never heard the word impossible. This time there's no stopping us.</p>
+                </div>
+                <button class="hire-me-btn" type="button">Hire Me Now!</button>
+            </div>
+        </section>
+        <section class="contact-section">
+            <div class="contact-container">
+                <div>CONTACT ME</div>
+                <form data-form class="contact-form" onsubmit="sendEmail(); reset(); return false">
+                    <input type="text" name="name" id="name" placeholder="Name*">
+                    <input type="email" name="email" id="email" placeholder="Email*">
+                    <input type="text" name="subject" id="subject" placeholder="Subject*">
+                    <textarea name="message" id="message" rows="4" cols="100" placeholder="Message"></textarea>
+                    <button class="header-wrapper-btn form-btn" type="submit">HIRE ME!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="main-footer-container">
+            <ul class="footer-nav-container">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Work</a></li>
+            </ul>
+            <ul class="footer-social-accounts-container">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-name-text">Kimuel Anqui</div>
+    </footer>
 </body>
 </html>
