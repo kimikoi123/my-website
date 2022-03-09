@@ -15,6 +15,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Poppins, sans-serif;
     font-weight: 400;
@@ -305,7 +309,14 @@ body {
 
 .item2 {
     background-image: url(/images/pixture\ website.png);
+}
 
+.item3 {
+    background-image: url(/images/organic\ website.png);
+}
+
+.item4 {
+    background-image: url(/images/Ave\ ecommerce.png);
 }
 
 .portfolio-item:hover {
