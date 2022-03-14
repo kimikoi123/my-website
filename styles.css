@@ -98,10 +98,30 @@ body {
     cursor: pointer;
     outline: none;
     transition: transform .35s ease-in-out;
+    position: relative;
+    z-index: 1;
 }
 
-.hire-me-btn:hover {
-    transform: scale(1.2);
+.hire-me-btn::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0%;
+    background-color: var(--blue-color);
+    border-radius: 100000px;
+    z-index: -1;
+    transition: all .25s ease-in-out;
+}
+
+.hire-me-btn:hover{
+    color: white;
+}
+
+.hire-me-btn:hover::before {
+    width: 100%;
 }
 
 .header-content-container {
@@ -150,6 +170,12 @@ body {
     font-size: .8rem;
     cursor: pointer;
     transition: transform .25s ease-in-out;
+}
+
+.header-btn {
+    font-size: .8rem;
+    font-weight: 700;
+    padding: .9rem 2rem;
 }
 
 .header-wrapper-btn:hover {
@@ -237,6 +263,10 @@ body {
     font-size: 2.5rem;
 }
 
+.service-icon > i {
+    transition: transform .8s ease-in-out;
+}
+
 .service-title {
     font-weight: 600;
 }
@@ -261,6 +291,9 @@ body {
     background-color: white;
 }
 
+.service-wrapper:hover  i {
+    transform: rotate(360deg);
+}
 
 
 
@@ -312,10 +345,6 @@ body {
 }
 
 .item3 {
-    background-image: url(/images/organic\ website.png);
-}
-
-.item4 {
     background-image: url(/images/Ave\ ecommerce.png);
 }
 
