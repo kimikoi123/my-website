@@ -93,8 +93,8 @@ body {
     text-align: center;
     padding: .5rem 1rem;
     border: 1px solid var(--blue-color);
-    border-radius: 10000px;
     color: var(--blue-color);
+    border-radius: 5px;
     cursor: pointer;
     outline: none;
     transition: transform .35s ease-in-out;
@@ -110,8 +110,8 @@ body {
     left: 0;
     right: 0;
     width: 0%;
+    border-radius: 5px;
     background-color: var(--blue-color);
-    border-radius: 100000px;
     z-index: -1;
     transition: all .25s ease-in-out;
 }
@@ -180,6 +180,26 @@ body {
 
 .header-wrapper-btn:hover {
     transform: scale(1.2);
+}
+
+.header-social-accounts {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-social-accounts-container.header-social-accounts > li {
+    width: 50px;
+    height: 50px;
+}
+
+.header-social-accounts  a {
+    color: black;
+    font-size: 2rem;
+}
+
+.header-hire-me {
+    width: 100px;
 }
 
 
@@ -501,6 +521,15 @@ body {
 
 .footer-social-accounts-container > li:hover {
     background-color: #32ccfe;
+    
+}
+
+.footer-social-accounts-container i {
+    transition: transform .5s ease-in-out;
+}
+
+.footer-social-accounts-container > li:hover  i {
+    transform: rotate(360deg);
     color: white;
 }
 
@@ -514,6 +543,30 @@ body {
 }
 
 
+/* Graphic Design Section */
+
+.graphic-design-container {
+    display: none;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-around;
+    max-width: 1300px;
+    padding: 2rem;
+}
+
+.graphic-design-container > img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    transition: transform .25s ease-in-out;
+    cursor: pointer;
+}
+
+.graphic-design-container > img:hover {
+    transform: scale(1.2);
+}
 
 
 
